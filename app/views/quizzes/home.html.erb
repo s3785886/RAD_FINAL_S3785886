@@ -1,0 +1,12 @@
+<% provide(:title, "Home") %>
+<div> 
+    <h1>QuizPages#home</h1>
+    <p>Are you ready to start the quiz?</p>
+    <%= button_to "Yes", quizzes_quizz_url, :method => "get"  %>
+
+</div>
+<!--Questions-->
+
+<p>hello_world</p>
+<!--Result-->
+<div id="results"><%= @correct_answers %></div>

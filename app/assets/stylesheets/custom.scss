@@ -1,0 +1,39 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+header {
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+}
+header li {
+    color: #fff;
+}
+html body {
+ padding-top: 65px;
+}
+
+footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
+}
+footer a {
+    color: #555;
+}
+footer a:hover {
+    color: #222;
+}
+footer small {
+    float: left;
+}
+footer ul {
+    float: right;
+    list-style: none;
+}
+footer ul li {
+    float: left;
+    margin-left: 15px;
+}

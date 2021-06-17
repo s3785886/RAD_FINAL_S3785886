@@ -1,0 +1,17 @@
+<% provide(:title, "Quizz") %>
+
+<div id="questions">
+        <%= form_tag do %>
+            <h3><%= @question %></h3>
+            <%- hash = eval(@answers) %>
+            <%- hash.each do |k, v|  %>
+                <!--<input type="radio" id="option" name="option" value="option">-->
+                <!--<label for="option"><%- puts '#{v}' unless nil %></label><br>-->
+                <%- @data = hash.key(v) %>
+                <%= radio_button_tag k, hash.key(v), false if v != nil%>
+                <%= v %></br>
+                
+            <%- end %>
+            <%= button_to "Submit", :method=> 'submit', :option => @data, remote: true %>
+        <% end %>
+</div>
